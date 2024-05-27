@@ -15,7 +15,9 @@ pipeline {
 
       stage('print PATH') {
         steps {
-         echo "PATH contains : ${env.PATH}" 
+         echo "PATH contains : ${env.PATH}"
+         echo "docker : ${env.dockerHome}" 
+         echo "maven ${env.mavenHome}"
          echo "Run"
 	}
        }
