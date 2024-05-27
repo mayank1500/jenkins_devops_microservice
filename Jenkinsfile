@@ -13,9 +13,9 @@ pipeline {
          }
         }
 
-      stage('Dev') {
+      stage('print PATH') {
         steps {
-         echo "Build"
+         echo "PATH contains : ${env.PATH}" 
          echo "Run"
 	}
        }
